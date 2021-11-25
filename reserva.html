@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Cabañas Sierrahuacha</title>
-        <link rel="icon" type="image/x-icon" href="assets/logotipov3.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -16,14 +16,13 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
-                    <i class="fas fa-bars ms-1 "></i>
+                    <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
@@ -35,56 +34,74 @@
                 </div>
             </div>
         </nav>
-        <section class="page-section clearfix">
+        <section class="page-section about-heading">
             <div class="container">
-                <div class="intro">
-                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">Futaleufú</span>
-                            <span class="section-heading-lower">Cabañas Sierra huacha</span>
-                        </h2>
-                        <p class="mb-3">Ven a descansar a nuestras hermosas cabañas construidas con amor por 
-                            sus dueños Antonio y Irma, disfruta el entorno que rodea nuestro complejo de cabañas y las actividades que otorga nuestra localidad.</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="reserva.html">Reserva</a></div>
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-3">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Formulario</span>
+                                    <span class="section-heading-lower">Contacto</span>
+                                </h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="page-section cta">
+
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Servicios</h2>
-                    <h3 class="section-subheading text-muted">...</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-burn fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Calefaccion a leña</h4>
-                        <p class="text-muted"></p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-bed fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Ropa de cama</h4>
-                        <p class="text-muted"></p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-wifi fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Wifi fibra optica</h4>
-                        <p class="text-muted"></p>
+                
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        
+                        <form id="contactForm" action="contactform.php" method="post">
+                            <!-- Nombre input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" name="nombre" placeholder="Ingresa tu nombre..." required/>
+                                <label for="name">Nombre</label>
+                                
+                            </div>
+                            <!-- apellido input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" name="apellido" placeholder="Ingresa tu apellido..." required/>
+                                <label for="name">Apellido</label>
+                                
+                            </div>
+                            <!-- telefono input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" name="telefono" placeholder="Ingresa tu telefono..." required/>
+                                <label for="name">Telefono</label>
+                                
+                            </div>
+                            <!-- Email input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="email" name="email" placeholder="name@example.com" required/>
+                                <label for="email">Correo Electronico</label>
+                            
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" type="text" name="message" placeholder="Ingresa tu mensaje aqui..." style="height: 10rem" required></textarea>
+                                <label for="message">Mensaje</label>
+                                
+                            </div>
+                            
+                           
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <footer class="footer text-faded text-center py-5">
 
             <div class="container">
