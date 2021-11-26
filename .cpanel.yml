@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/csi30576/public_html/
-    - /bin/cp -R sh_bootstrap $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
