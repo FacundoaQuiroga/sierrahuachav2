@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
 
     // Edita las líneas siguientes con tu dirección de correo y asunto
 
-    $email_to = "sierrahuacha@gmail.com";
+    $email_to = "facundoaquiroga1@gmail.com";
 
     $email_subject = "Reserva Cabañas";
 
@@ -115,6 +115,17 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- Mensaje de Éxito-->
 
-Muchas Gracias! Proximamente Estaremos en Contacto.
+<html>
+<head>
+<meta http-equiv="Refresh" content="5;url=https://sierrahuacha.cl">
+</head>
 
+<body>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/sweetAlert.js">
+
+</script>
+</body>
+</html>
 
