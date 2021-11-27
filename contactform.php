@@ -115,17 +115,21 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- Mensaje de Éxito-->
 
-<html>
-<head>
-<meta http-equiv="Refresh" content="5;url=https://sierrahuacha.cl">
-</head>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Refresh" content="10;url=https://sierrahuacha.cl">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Cabañas Sierrahuacha</title>
+    <link rel="icon" type="image/x-icon" href="assets/logotipov3.ico" />
+  </head>
+  <body>
 
-<body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweetAlert.js">
 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="js/sweetAlert.js">
-
-</script>
-</body>
+    </script>
+  </body>
 </html>
 
