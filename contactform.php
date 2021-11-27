@@ -123,6 +123,7 @@ $headers = 'From: '.$email_from."\r\n".
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Cabañas Sierrahuacha</title>
     <link rel="icon" type="image/x-icon" href="assets/logotipov3.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
 
